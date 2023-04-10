@@ -12,6 +12,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 
 import { CarouselModule } from 'primeng/carousel';
+import { HeroComponent } from './components/hero/hero.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { PostComponent } from './components/post/post.component';
+import { PortfolioItemComponent } from './components/portfolio-item/portfolio-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { CarouselModule } from 'primeng/carousel';
     MainComponent,
     AboutComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    HeroComponent,
+    TestimonialComponent,
+    FeatureComponent,
+    PostComponent,
+    PortfolioItemComponent
   ],
   imports: [
     BrowserModule,
