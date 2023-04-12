@@ -25,6 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { TabViewModule } from 'primeng/tabview';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SingleFeatureComponent } from './components/single-feature/single-feature.component';
+import { BlogContentComponent } from './components/blog-content/blog-content.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
     PostComponent,
     PortfolioItemComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SingleFeatureComponent,
+    BlogContentComponent
   ],
   imports: [
     BrowserModule,

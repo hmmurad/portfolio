@@ -1,4 +1,4 @@
-import { Component , OnInit} from '@angular/core';
+import { Component , Input, OnInit} from '@angular/core';
 import { ConfigService } from 'src/app/shared/services/config.service';
 
 @Component({
@@ -8,16 +8,13 @@ import { ConfigService } from 'src/app/shared/services/config.service';
 })
 export class PostComponent implements OnInit{
 
-  blog: any;
+  @Input() post:any;
 
   constructor(private config: ConfigService) {}
 
   ngOnInit(): void {
-    this.blog = this.getBlog()
+
   }
 
-  getBlog() {
-    return this.config.getConfig().blogPage;
-  }
 
 }
