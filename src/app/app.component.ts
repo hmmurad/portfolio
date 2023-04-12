@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -6,11 +6,18 @@ import { Component, ViewChild } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'pgdit-project';
+  showmenu = false;
 
 
+  ngOnInit(): void {
+    
+  }
 
+  onshow() {
+    this.showmenu = !this.showmenu
+  }
   
 
 }

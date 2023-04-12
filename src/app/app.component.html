@@ -1,8 +1,8 @@
 
 <div class="w-screen">
-
-  <div class="block lg:flex relative">
-    <div class="w-full lg:w-3/12 2xl:w-2/12 lg:h-screen bg-emerald-600 px-4 lg:sticky top-0 " >
+  <div class="block lg:flex">
+    <!-- sidebar -->
+    <div class="hidden lg:block w-full lg:w-3/12 2xl:w-2/12 lg:h-screen bg-emerald-600 px-4 lg:sticky top-0 " >
       <div class="text-white flex flex-col gap-4 text-center">
         <div class="mt-5">
           <img class="rounded-full w-32 h-32 mx-auto" src="./../assets/img/0011.jpg" alt="">
@@ -28,20 +28,20 @@
       <div class="my-2">
           <ul role="list" class="divide-y divide-slate-200 text-slate-50 text-lg font-medium">            
               <!-- Remove top/bottom padding when first/last child -->
-              <li class="flex py-4 first:pt-0 last:pb-0 justify-center ">
+              <li class="flex py-2 first:pt-0 last:pb-0 justify-center ">
                 <a routerLink="/about" routerLinkActive="active"  class="hover:text-gray-900 transition ease-in-out delay-100">
                   <i class="pi pi-user mr-3"></i>
                   <span>About Me</span>
                 </a>
 
               </li>
-              <li class="flex py-4 first:pt-0 last:pb-0 justify-center">
+              <li class="flex py-2 first:pt-0 last:pb-0 justify-center">
                 <a routerLink="/portfolio" routerLinkActive="active"  class="hover:text-gray-900 transition ease-in-out delay-100">
                   <i class="pi pi-box mr-3"></i>
                   <span>Portfolio</span>
                 </a>
               </li>
-              <li class="flex py-4 first:pt-0 last:pb-0 justify-center">
+              <li class="flex py-2 first:pt-0 last:pb-0 justify-center">
                 <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  class="hover:text-gray-900 transition ease-in-out delay-100">
                   <i class="pi pi-box mr-3"></i>
                   <span>Contact Me</span>
@@ -49,6 +49,36 @@
               </li>
           </ul>
       </div>
+    </div>
+    <!-- collapse navbar -->
+    <div class="lg:hidden bg-emerald-600 py-4 shadow-md  mx-auto w-full px-12 rounded-t">
+      <div class="flex justify-between items-center">
+        <button class="border-2 border-gray-800 focus:border-blue-400 px-3 py-2 shadow rounded cursor-pointer hover:scale-105 btn" type="button" (click)="onshow()">
+          <div class="border-b-2 border-gray-800 w-4 mb-1"></div>
+          <div class="border-b-2 border-gray-800 w-4 mb-1"></div>
+          <div class="border-b-2 border-gray-800 w-4"></div>
+        </button>
+        <h2 class="md:text-2xl font-bold text-gray-800 text-xl">Hosne Mobarak</h2>
+
+        <!-- {{showmenu}} -->
+      </div>
+
+      <div class="py-4 flex gap-3 justify-between items-center" *ngIf="showmenu">
+        <ul class="flex flex-col gap-2 text-gray-800">
+          <li class="">
+            <a href="#" class=" py-2   transition-all hover:text-gray-700 hover:font-medium ">About Me</a>
+          </li>
+          <li class="">
+            <a href="#" class=" py-2 transition-all hover:text-gray-700 hover:font-medium ">Portfolio</a>
+          </li>
+        </ul>
+        <div>
+          <img src="./../assets/img/0011.jpg" class="h-24 w-24 rounded-full" alt="">
+        </div>
+
+      </div>
+
+
     </div>
     <div class="w-full lg:w-9/12 2xl:w-10/12 p-0">
       <router-outlet></router-outlet>
