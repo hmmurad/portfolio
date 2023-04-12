@@ -1,0 +1,46 @@
+.hover:hover:before {
+    content: '';
+    top: 0px;
+    left: 505px;
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    border-top: 4px solid green
+}
+.hover1:hover:before {
+    content: '';
+    top: 0px;
+    left: 555px;
+    position: absolute;
+    width: 72px;
+    height: 3px;
+    border-top: 4px solid green
+}
+.hover2:hover:before {
+    content: '';
+    top: 0px;
+    left: 645px;
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    border-top: 4px solid green
+}
+.hover3:hover:before {
+    content: '';
+    top: 0px;
+    left: 735px;
+    position: absolute;
+    width: 66px;
+    height: 3px;
+    border-top: 4px solid green
+}
+.hover4:hover:before {
+    content: '';
+    top: 0px;
+    left: 820px;
+    position: absolute;
+    width: 66px;
+    height: 3px;
+    border-top: 4px solid green;
+    transition: calc(.9);
+}

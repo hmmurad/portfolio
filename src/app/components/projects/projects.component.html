@@ -1,0 +1,14 @@
+<section class="flex flex-col justify-start gap-3 px-[50px] py-[30px] 2xl:px-[150px] 2xl:py-[30px]">
+    <div class="flex flex-col items-center text-center  lg:items-start md:align-start">
+        <h2 class="text-3xl font-extrabold border-l-4 border-teal-700 px-3 mb-3">{{portfolioItems.title}}</h2>
+    </div>
+    <div>     
+        <!-- portfolio item  -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
+            <app-portfolio-item  *ngFor="let item of portfolioItems.portfolioItem" [portfolio]="item" ></app-portfolio-item>
+        </div>
+        <div class="mt-5 justify-center flex">
+            <a class="px-5 py-2 bg-emerald-600 text-base text-white  font-semibold rounded-md hover:bg-teal-600 transition ease-in-out delay-100"> <i class="pi pi-eye mr-3"></i>View Portfolio</a>
+        </div>
+    </div>
+</section>

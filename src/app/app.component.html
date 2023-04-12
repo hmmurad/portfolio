@@ -5,11 +5,11 @@
     <div class="hidden lg:block w-full lg:w-3/12 2xl:w-2/12 lg:h-screen bg-emerald-600 px-4 lg:sticky top-0 " >
       <div class="text-white flex flex-col gap-4 text-center">
         <div class="mt-5">
-          <img class="rounded-full w-32 h-32 mx-auto" src="./../assets/img/0011.jpg" alt="">
+          <img class="rounded-full w-32 h-32 mx-auto" src="./../assets/img/{{user.image}}.jpg" alt="{{user.name }}" *ngIf="user">
           <!-- <img class="rounded-full w-32 h-32 mx-auto " src="./../assets/img/3999 _.jpg" alt=""> -->
         </div>
         <div>
-          <h2 class="text-xl font-semibold mb-1">Md Hosne Mobarak</h2>
+          <h2 class="text-xl font-semibold mb-1">{{user.name ? user.name : 'Anonymous'}}</h2>
           <h5 class="text-sm">Frontend Developer | Angular | Nodejs | NESTJS | MEAN Stack</h5>
         </div>
         <div>
@@ -51,34 +51,29 @@
       </div>
     </div>
     <!-- collapse navbar -->
-    <div class="lg:hidden bg-emerald-600 py-4 shadow-md  mx-auto w-full px-12 rounded-t">
-      <div class="flex justify-between items-center">
+    <div class="lg:hidden bg-emerald-600 py-4 shadow-md  mx-auto w-full  rounded-t">
+      <div class="flex justify-between items-center px-12">
         <button class="border-2 border-gray-800 focus:border-blue-400 px-3 py-2 shadow rounded cursor-pointer hover:scale-105 btn" type="button" (click)="onshow()">
           <div class="border-b-2 border-gray-800 w-4 mb-1"></div>
           <div class="border-b-2 border-gray-800 w-4 mb-1"></div>
           <div class="border-b-2 border-gray-800 w-4"></div>
         </button>
-        <h2 class="md:text-2xl font-bold text-gray-800 text-xl">Hosne Mobarak</h2>
+        <h2 class="md:text-2xl font-bold text-gray-800 text-xl">{{user.name}}</h2>
 
         <!-- {{showmenu}} -->
       </div>
-
-      <div class="py-4 flex gap-3 justify-between items-center" *ngIf="showmenu">
+ 
+      
+      <div class="pt-4 flex gap-3 justify-between items-center border-t-[1px] border-gray-500 my-3 px-12" *ngIf="showmenu">
         <ul class="flex flex-col gap-2 text-gray-800">
           <li class="">
-            <a href="#" class=" py-2   transition-all hover:text-gray-700 hover:font-medium ">About Me</a>
+            <a href="#" class=" py-2   transition-all hover:text-gray-700 hover:font-semibold">About Me</a>
           </li>
           <li class="">
-            <a href="#" class=" py-2 transition-all hover:text-gray-700 hover:font-medium ">Portfolio</a>
+            <a href="#" class="py-2 transition-all hover:text-gray-700 hover:font-semibold">Portfolio</a>
           </li>
         </ul>
-        <div>
-          <img src="./../assets/img/0011.jpg" class="h-24 w-24 rounded-full" alt="">
-        </div>
-
       </div>
-
-
     </div>
     <div class="w-full lg:w-9/12 2xl:w-10/12 p-0">
       <router-outlet></router-outlet>

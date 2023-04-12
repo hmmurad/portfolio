@@ -1,41 +1,22 @@
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-3 text-center ">
-    <div class="my-2 sm:text-left">
-        <div class="flex  justify-center sm:justify-start gap-2">
-            <img src="../../../assets/img/js.png" class="w-8 h-8" alt="">
+<section class="flex flex-col justify-start gap-3 px-[50px] py-[30px] 2xl:px-[150px] 2xl:py-[30px] mt-5">
+    <div class="flex flex-col items-center text-center  lg:items-start md:align-start">
+        <h2 class="text-3xl font-extrabold border-l-4 border-teal-700 px-3 mb-3">{{whatIDo.title}}</h2>
+        <p class="leading-6 lg:text-left">{{whatIDo.subTitle}}</p>
+    </div>
+    <!--  -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-3 text-center ">
+        <div class="my-2 sm:text-left" *ngFor="let item of whatIDo.item">
+            <div class="flex  justify-center sm:justify-start gap-2" *ngIf="item.icon">
+                <img src="../../../assets/img/{{icon}}.png" class="w-8 h-8" alt=""  *ngFor="let icon of item.icon">
+            </div>
+            <h3 class="text-base font-extrabold my-2">{{item.title}}</h3>
+            <p class="text-sm ">{{item.desc}}</p>
         </div>
-        <h3 class="text-base font-extrabold my-2">Vanilla JS</h3>
-        <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia repellendus, non consequuntur, nulla dolor error voluptate perferendis a nesciunt ab laborum sunt aspernatur quae natus ratione quas quod. Nostrum?</p>
     </div>
-    <div class="my-3 sm:text-left">   
-        <div class="flex  justify-center sm:justify-start gap-2">
-            <img src="../../../assets/img/bootstrap.png" class="w-8 h-8" alt="">
-            <img src="../../../assets/img/tailwindcss-icon.256x154.png" class="w-8 h-8" alt="">
-        </div>             
-        <h3 class="text-base font-bold my-2">Bootstrap & Tailwindcss</h3>
-        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia repellendus, non consequuntur, nulla dolor error voluptate perferendis a nesciunt ab laborum sunt aspernatur quae natus ratione quas quod. Nostrum?</p>
+    <!-- service and prices button -->
+    <div class="flex justify-center gap-3 mt-3 text-center">
+        <button class="px-5 py-2 bg-white-700 text-base text-gray-600 font-semibold rounded-md border-2 border-teal-700  hover:bg-emerald-600  transition ease-in-out delay-100 hover:text-gray-200"> <i class="pi pi-credit-card mr-3"></i> Services & Prices</button>
     </div>
-    <div class="my-3 sm:text-left">                
-        <div class="flex  justify-center sm:justify-start gap-2">
-            <img src="../../../assets/img/css-3.png" class="w-8 h-8" alt="">
-            <img src="../../../assets/img/html-5.png" class="w-8 h-8" alt="">
-        </div>                
-        <h3 class="text-base font-bold my-2">HTML5 & CSS3</h3>
-        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia repellendus, non consequuntur, nulla dolor error voluptate perferendis a nesciunt ab laborum sunt aspernatur quae natus ratione quas quod. Nostrum?</p>
-    </div>
-    <div class="my-3 sm:text-left">                
-        <div class="flex  justify-center sm:justify-start gap-2">
-            <img src="../../../assets/img/angular.jpg" class="w-12 h-12" alt="">
-            <img src="../../../assets/img/nodejs.png" class="w-8 h-8 mt-2" alt="">
-        </div>                
-        <h3 class="text-base font-bold my-2">Angualr & NodeJS</h3>
-        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia repellendus, non consequuntur, nulla dolor error voluptate perferendis a nesciunt ab laborum sunt aspernatur quae natus ratione quas quod. Nostrum?</p>
-    </div>
-    <div class="my-3 sm:text-left">                
-        <div class="flex  justify-center sm:justify-start gap-2">
-            <img src="../../../assets/img/mysql.png" class="w-8 h-8" alt="">
-            <img src="../../../assets/img/nestjs.256x255.png" class="w-8 h-8" alt="">
-        </div>                
-        <h3 class="text-base font-extrabold my-2">MySql & NESTJS</h3>
-        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia repellendus, non consequuntur, nulla dolor error voluptate perferendis a nesciunt ab laborum sunt aspernatur quae natus ratione quas quod. Nostrum?</p>
-    </div>
-</div>
+</section>
+
+

@@ -2,14 +2,14 @@ import { Component, Input } from '@angular/core';
 import { ConfigService } from 'src/app/shared/services/config.service';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class PortfolioComponent {
- 
+export class ProjectsComponent {
+  portfolioItems: any;
 
-  portfolioItems:any
+  @Input() title = '';
 
   constructor(private config: ConfigService) {}
 

@@ -7,6 +7,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+
+  user: any = {
+    name: 'Hosne Mobarak',
+    image: '0011'
+  }
   title = 'pgdit-project';
   showmenu = false;
 
