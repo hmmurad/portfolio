@@ -13,7 +13,6 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MainComponent } from './pages/main/main.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
-import { ContactComponent } from './pages/contact/contact.component';
 
 
 import { HeroComponent } from './components/hero/hero.component';
@@ -27,6 +26,11 @@ import { TabViewModule } from 'primeng/tabview';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SingleFeatureComponent } from './components/single-feature/single-feature.component';
 import { BlogContentComponent } from './components/blog-content/blog-content.component';
+import { PortfolioDetailComponent } from './pages/portfolio-detail/portfolio-detail.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { PostDetailComponent } from './pages/post-detail/post-detail.component';
+import { SingleTestimonialComponent } from './components/single-testimonial/single-testimonial.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,6 @@ import { BlogContentComponent } from './components/blog-content/blog-content.com
     MainComponent,
     AboutComponent,
     PortfolioComponent,
-    ContactComponent,
     HeroComponent,
     TestimonialComponent,
     FeatureComponent,
@@ -44,7 +47,12 @@ import { BlogContentComponent } from './components/blog-content/blog-content.com
     FooterComponent,
     ProjectsComponent,
     SingleFeatureComponent,
-    BlogContentComponent
+    BlogContentComponent,
+    PortfolioDetailComponent,
+    ContactPageComponent,
+    BlogPageComponent,
+    PostDetailComponent,
+    SingleTestimonialComponent
   ],
   imports: [
     BrowserModule,

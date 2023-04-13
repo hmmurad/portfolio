@@ -1,0 +1,16 @@
+<div class="bg-gray-100 ">
+    <div class="px-[50px] py-[30px] 2xl:px-[150px] 2xl:py-[30px] flex flex-col justify-center items-center text-center gap-2">
+        <h2 class="text-4xl font-extrabold">A Blog About Software Development And Life</h2>
+        <p>Welcome to my blog. Subscribe and get my latest blog post in your inbox.</p>
+        <div class="flex justify-center items-center self-center gap-2">
+            <input type="text" class="p-2 mt-3 border-[1px] border-gray-300 rounded " placeholder="Enter Email">
+            <button class="mt-3 px-3 py-2 rounded w-full bg-emerald-600 transition ease-in-out delay-150 hover:bg-emerald-500 text-gray-200 font-bold text-base">Subscribe</button>
+        </div>
+    </div>
+</div>
+
+<div class="px-[50px] py-[30px] 2xl:px-[150px] 2xl:py-[30px]">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 my-5">
+        <app-post *ngFor="let post of blog.post" [post]="post" ></app-post>
+    </div>
+</div>
