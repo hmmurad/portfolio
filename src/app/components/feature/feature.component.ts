@@ -14,7 +14,6 @@ export class FeatureComponent implements OnInit{
 
   ngOnInit(): void {
       this.whatIDo = this.getFeaturePage()
-      console.log(this.whatIDo);
       
       
   }

@@ -7,6 +7,7 @@ import { PortfolioDetailComponent } from './pages/portfolio-detail/portfolio-det
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { PostDetailComponent } from './pages/post-detail/post-detail.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'portfolio', component: PortfolioComponent},
     { path: 'portfolio/:id', component: PortfolioDetailComponent},
     { path: 'posts', component: BlogPageComponent},
+    { path: 'resume', component: ResumeComponent},
     { path: 'posts/:id', component: PostDetailComponent},
     { path: 'contact', component: ContactPageComponent},
   ]},

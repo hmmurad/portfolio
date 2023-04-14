@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ConfigService } from 'src/app/shared/services/config.service';
+import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,9 +10,11 @@ import { ConfigService } from 'src/app/shared/services/config.service';
 export class PortfolioComponent {
  
 
-  portfolioItems:any
+  portfolioItems:any;
+  
+  portfolio = this.portfolioService.getPortfolioItems()
 
-  constructor(private config: ConfigService) {}
+  constructor(private config: ConfigService, private portfolioService: PortfolioService) {}
 
 
   ngOnInit(): void {

@@ -1,0 +1,158 @@
+<div class="bg-gray-100 pb-3">
+    <div class="px-[50px] py-[30px] 2xl:px-[150px] 2xl:py-[30px] flex flex-col justify-center items-center text-center gap-2 ">
+        <h2 class="text-4xl font-extrabold">Portfolio</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia ut, sit libero dicta consequatur error pariatur at ipsa est reiciendis quis ullam illo quas hic corporis incidunt! Tempora, eveniet consectetur.</p>
+        <button (click)="download()" class="mt-4 px-3 py-2 rounded w-48 bg-emerald-600 transition ease-in-out delay-150 hover:bg-emerald-500 text-gray-200 font-semibold text-base"> <i class="pi pi-file-pdf mr-3"></i> Generate PDF</button>
+    </div>
+</div>
+
+<div class="px-[50px] py-[30px] 2xl:px-[250px] 2xl:py-[30px] my-3">
+    <div class="shadow rounded flex justify-center items-start" id="resume" >
+
+        <div class="w-4/12 bg-gray-100 h-screen p-4 ">
+            <div class="flex flex-col justify-center items-center ">
+                <div class="mb-3">
+                    <img src="./../../../assets/img/0011.jpg" class="w-32 h-32 rounded-full shadow " alt="">
+                </div>
+                <h2 class="text-xl font-bold text-black">Hosne Mobarak</h2>
+                <h6 class="text-sm font-semibold text-gray-500">Software Developer</h6>
+            </div>
+            <!-- info -->
+             <div class="my-3 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam eveniet voluptatem temporibus aperiam corporis odit et. Voluptate esse veniam, sed possimus, modi vitae nesciunt, porro at minima hic quae?</p> 
+            </div>
+            <!-- details -->
+            <div class="text-left mt-3">
+                <h2 class="border-b-2 border-teal-600 py-2 mb-3">Details</h2>
+                <div class="text-sm flex flex-col gap-2 ">
+                    <div class="flex justify-start  items-center gap-2 text-black font-semibold"><i class="pi pi-phone text-xs border w-8 self-center p-2 h-8 "></i>01834651517</div>
+                    <div class="flex justify-start  items-center gap-2 text-black font-semibold"><i class="pi pi-envelope text-xs border w-8 self-center p-2 h-8 "></i>muradjpr@gmail.com</div>
+                    <div class="flex justify-start  items-center gap-2 text-black font-semibold"><i class="pi pi-map text-xs border w-8 self-center p-2 h-8 "></i>Dhaka , Bangladesh</div>  
+                </div>
+            </div>
+            <!-- skills -->
+            <div class="text-left mt-3">
+                <h2 class="border-b-2 border-teal-600 py-2 mb-3">Skills</h2>
+                <div class="text-sm ">
+                    <div class="text-black font-semibold w-full mb-2">
+                        <h2 class="mb-2">Angular</h2>
+                        <p-progressBar ngClass="w-full h-5" [style]="{ height: '6px' }" [value]="80" [showValue]="false"></p-progressBar>
+                    </div>
+                    <div class="text-black font-semibold w-full mb-2">
+                        <h2 class="mb-2">Nest JS</h2>
+                        <p-progressBar ngClass="w-full h-5" [style]="{ height: '6px' }" [value]="70" [showValue]="false"></p-progressBar>
+                    </div>
+                    <div class="text-black font-semibold w-full mb-2">
+                        <h2 class="mb-2">MEAN Stack</h2>
+                        <p-progressBar ngClass="w-full h-5" [style]="{ height: '6px' }" [value]="85" [showValue]="false"></p-progressBar>
+                    </div>
+                    <div class="text-black font-semibold w-full mb-2">
+                        <h2 class="mb-2">Tailwindcss</h2>
+                        <p-progressBar ngClass="w-full h-5" [style]="{ height: '6px' }" [value]="80" [showValue]="false"></p-progressBar>
+                    </div>
+                    <div class="text-black font-semibold w-full mb-2">
+                        <h2 class="mb-2">Bootstrap</h2>
+                        <p-progressBar ngClass="w-full h-5" [style]="{ height: '6px' }" [value]="80" [showValue]="false"></p-progressBar>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+        </div>
+        
+        
+        <div class="w-8/12 px-5 py-4 flex flex-col">
+
+            <!-- work experience -->
+            <div class="mb-2">
+                <h2 class="text-xl font-bold">Work Experience</h2>
+                <div class="border-[1px] border-gray-500 w-full mt-1"></div>
+                <div class="flex my-3 gap-2">
+                    <div class="w-1/5 text-sm">
+                        <p>May 2021 - April-2023</p>
+                    </div>
+                    <p-divider  layout="vertical"></p-divider>
+                    <div class="w-4/5">
+                        <h4 class="text-sm font-semibold">Soft Tech Company Ltd</h4>
+                        <p class="text-sm">sit libero dicta consequatur error pariatur at ipsa est reiciendis quis</p>
+                    </div>
+                </div>
+                <div class="flex my-3 gap-2">
+                    <div class="w-1/5 text-sm">
+                        <p>May 2021 - April-2023</p>
+                    </div>
+                    <p-divider  layout="vertical"></p-divider>
+                    <div class="w-4/5">
+                        <h4 class="text-sm font-semibold">Soft Tech Company Ltd</h4>
+                        <p class="text-sm">sit libero dicta consequatur error pariatur at ipsa est reiciendis quis</p>
+                    </div>
+                </div>
+                <div class="flex my-3 gap-2">
+                    <div class="w-1/5 text-sm">
+                        <p>May 2021 - April-2023</p>
+                    </div>
+                    <p-divider  layout="vertical"></p-divider>
+                    <div class="w-4/5">
+                        <h4 class="text-sm font-semibold">Soft Tech Company Ltd</h4>
+                        <p class="text-sm">sit libero dicta consequatur error pariatur at ipsa est reiciendis quis</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Education qualification -->
+            <div class="mb-2">
+                <h2 class="text-xl font-bold">Education Qualifications</h2>
+                <div class="border-[1px] border-gray-500 w-full mt-1"></div>
+                <div class="flex my-3 gap-2">
+                    <div class="w-1/5 text-sm">
+                        <h5 class="font-semibold">Post Graduation in IT</h5>
+                    </div>
+                    <p-divider  layout="vertical"></p-divider>
+                    <div class="w-4/5">
+                        <h4 class="text-sm font-semibold">Jahangirnagar University</h4>
+                        <p class="text-sm">May 2021 - April-2023</p>
+                    </div>
+                </div>
+                <div class="flex my-3 gap-1">
+                    <div class="w-1/5 text-sm">
+                        <h5 class="font-semibold">MA in English</h5>
+                    </div>
+                    <p-divider  layout="vertical"></p-divider>
+                    <div class="w-4/5">
+                        <h4 class="text-sm font-semibold">Dhaka International University</h4>
+                        <p class="text-sm">May 2021 - April-2023</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Other experiences -->
+            <div class="mb-2">
+                <h2 class="text-xl font-bold">Other Skills and Experiences</h2>
+                <div class="border-[1px] border-gray-500 w-full mt-1"></div>
+                <div class="flex my-3 gap-2">
+                    <div class="w-1/5 text-sm">
+                        <h5 class="font-semibold"></h5>
+                    </div>
+                    <p-divider  layout="vertical"></p-divider>
+                    <div class="flex flex-col gap-2">
+                        <div class="w-4/5 flex flex-col gap-2 justify-center">
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>HTML5</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>CSS3</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>JAVASCRIPT</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>MONGODB</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>LINUX OPERATING SYSTEM</h4>
+                        </div>
+                        <p-divider  layout="horizontal"></p-divider>
+                        <div class="w-4/5 flex flex-col gap-2 justify-center">
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>Excellent skill on English verbal and written communication.</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>Sound knowledge in computer hardware and software.</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>Keen interest on latest technology and gadgets.</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>Keen interest on learning new things.</h4>
+                            <h4 class=""><i class="pi pi-check-square mr-3"></i>Excellent problem solving skills.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

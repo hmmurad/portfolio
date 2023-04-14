@@ -21,8 +21,6 @@ import { FeatureComponent } from './components/feature/feature.component';
 import { PostComponent } from './components/post/post.component';
 import { PortfolioItemComponent } from './components/portfolio-item/portfolio-item.component';
 import { FooterComponent } from './components/footer/footer.component';
-
-import { TabViewModule } from 'primeng/tabview';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SingleFeatureComponent } from './components/single-feature/single-feature.component';
 import { BlogContentComponent } from './components/blog-content/blog-content.component';
@@ -31,6 +29,11 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { PostDetailComponent } from './pages/post-detail/post-detail.component';
 import { SingleTestimonialComponent } from './components/single-testimonial/single-testimonial.component';
+import { ResumeComponent } from './pages/resume/resume.component';
+
+import { TabViewModule } from 'primeng/tabview';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,8 @@ import { SingleTestimonialComponent } from './components/single-testimonial/sing
     ContactPageComponent,
     BlogPageComponent,
     PostDetailComponent,
-    SingleTestimonialComponent
+    SingleTestimonialComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +64,9 @@ import { SingleTestimonialComponent } from './components/single-testimonial/sing
     HttpClientModule,
     BrowserAnimationsModule,
     CarouselModule,
-    TabViewModule
+    TabViewModule,
+    ProgressBarModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
