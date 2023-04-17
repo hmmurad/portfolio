@@ -48,9 +48,7 @@ export class PortfolioService {
     return this.items.find((item:any) => {
      item.id = id
      console.log(item);
-     return  item
-     
-       
+     return  item            
     })
   }
 }

@@ -8,7 +8,10 @@
             <app-portfolio-item  *ngFor="let item of items" [portfolio]="item" ></app-portfolio-item>
         </div>
         <div class="mt-5 justify-center flex">
-            <a class="px-5 py-2 bg-emerald-600 text-base text-white  font-semibold rounded-md hover:bg-teal-600 transition ease-in-out delay-100"> <i class="pi pi-eye mr-3"></i>View Portfolio</a>
+            <a 
+                class="px-5 py-2 bg-emerald-600 text-base text-white  font-semibold rounded-md hover:bg-teal-600 transition ease-in-out delay-100"
+                routerLink="/portfolio"
+                > <i class="pi pi-eye mr-3"></i>View Portfolio</a>
         </div>
     </div>
 </section>

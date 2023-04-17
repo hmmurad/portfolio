@@ -9,8 +9,6 @@ import { HttpClientModule } from '@angular/common/http'
 import { CarouselModule } from 'primeng/carousel';
 
 
-import { SidenavComponent } from './components/sidenav/sidenav.component';
-import { MainComponent } from './pages/main/main.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
@@ -38,8 +36,6 @@ import { DividerModule } from 'primeng/divider';
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
-    MainComponent,
     AboutComponent,
     PortfolioComponent,
     HeroComponent,

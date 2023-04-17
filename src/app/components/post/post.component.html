@@ -1,10 +1,10 @@
     <div class="flex flex-col border-[1px] border-gray-200 bg-gray-100 ">
-        <img src="./../../../assets/img/{{post.img}}.jpg" alt="{{post.postTitle}}" class="w-full h-[300px]">
+        <img src="https://picsum.photos/id/23/500/300" alt="{{post.title}}" class="w-full h-[300px]">
         <div class="p-4 space-y-2 flex flex-col">
-            <h3 class="text-xl font-bold text-black">{{post.postTitle}}</h3>
-            <p class="my-2 text-sm">{{post.content}}</p>
+            <h3 class="text-xl font-bold text-black">{{post.title}}</h3>
+            <p class="my-2 text-sm">{{post.body}}</p>
 
-            <a class="text-teal-700 my-3" href="#"> Read More <i class="pi pi-arrow-right text-sm ml-2"></i></a>
+            <a class="text-teal-700 my-3" routerLink="/posts/{{post.id}}"> Read More <i class="pi pi-arrow-right text-sm ml-2"></i></a>
             <span class="text-xs text-gray-400">Published 1 day ago.</span>
         </div>
     </div>

@@ -2,22 +2,31 @@
 <div class="w-screen">
   <div class="block lg:flex">
     <!-- sidebar -->
-    <div class="hidden lg:block w-full lg:w-3/12 2xl:w-2/12 lg:h-screen bg-emerald-600 px-4 lg:sticky top-0 " >
-      <div class="text-white flex flex-col gap-4 text-center">
-        <div class="mt-5">
-          <img class="rounded-full w-32 h-32 mx-auto" src="./../assets/img/{{user.image}}.jpg" alt="{{user.name }}" *ngIf="user">
+    <div class="hidden lg:block w-full lg:w-3/12 2xl:w-2/12 h-full bg-emerald-600 px-4 lg:sticky top-0 pb-3" >
+      <div class="text-white flex flex-col gap-2 text-center">
+        <div class="mt-4">
+          <img class="rounded-full w-32 h-32 mx-auto" src="https://picsum.photos/id/65/200/300" alt="{{user.name }}" *ngIf="user">
           <!-- <img class="rounded-full w-32 h-32 mx-auto " src="./../assets/img/3999 _.jpg" alt=""> -->
         </div>
-        <div>
-          <h2 class="text-xl font-semibold mb-1">{{user.name ? user.name : 'Anonymous'}}</h2>
-          <h5 class="text-sm">Frontend Developer | Angular | Nodejs | NESTJS | MEAN Stack</h5>
+        <div class="mb-1 text-gray-800">
+          <h2 class="text-2xl font-semibold mb-1">{{user.name ? user.name : 'Anonymous'}}</h2>
+          <h5 class="text-sm font-semibold text-gray-300">Frontend Developer | Angular | Nodejs | NESTJS | MEAN Stack</h5>
         </div>
-        <div>
-          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos eligendi unde perspiciatis,  fuga dolorum sapiente culpa atque odit vitae!</p>
+        <div class="pb-2">
+          <p class="text-sm text-justify">I am a skilled Angular developer with expertise in NestJS, NodeJS, and the MEAN stack.
+            <br>
+
+            I am constantly seeking out new technologies and trends to improve my skills and stay up-to-date with the latest technology. My proficiency in Angular, NestJS, NodeJS, and the MEAN stack enables me to work on a wide range of web development projects with ease.
+            <br>
+            
+           I am a reliable and hardworking team member who values collaboration and communicationand enjoy working closely with my colleagues to ensure that we produce high-quality work that exceeds expectations.
+           <br>
+            
+            With my passion for development, dedication to learning, and expertise in web technologies, I am confident that I can make a valuable contribution to any development team.</p> 
         </div>
-        <div class="flex justify-center gap-3 text-white text-xl">
-          <a href="" class="hover:text-blue-500" ><i class="pi pi-facebook"></i></a>
-          <a href="" class="hover:text-gray-500 "><i class="pi pi-linkedin"></i></a>
+        <div class="flex justify-center gap-3 text-white text-xl mb-2">
+          <a href="https://www.fb.com/hmmkdy" class="hover:text-blue-500" ><i class="pi pi-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/md-hosne-mobarak-904b64a1/" class="hover:text-gray-500 "><i class="pi pi-linkedin"></i></a>
           <a href="" class="hover:text-blue-500 "><i class="pi pi-twitter"></i></a>
           <a href="" class="hover:text-green-500 "><i class="pi pi-whatsapp"></i></a> 
         </div>
@@ -84,7 +93,10 @@
             <a routerLink="/portfolio" class="py-2 transition-all hover:text-gray-700 hover:font-semibold">Portfolio</a>
           </li>
           <li class="">
-            <a routerLink="/posts" class="py-2 transition-all hover:text-gray-700 hover:font-semibold">Blog</a>
+            <a routerLink="/resume" class="py-2 transition-all hover:text-gray-700 hover:font-semibold">Resume</a>
+          </li>
+          <li class="">
+            <a  routerLink="/posts" class="py-2 transition-all hover:text-gray-700 hover:font-semibold">Blog</a>
           </li>
           <li class="">
             <a routerLink="/contact" class="py-2 transition-all hover:text-gray-700 hover:font-semibold">Contact Me</a>
@@ -92,7 +104,7 @@
         </ul>
       </div>
     </div>
-    <div class="w-full lg:w-9/12 2xl:w-10/12 p-0">
+    <div class="w-screen lg:w-9/12 2xl:w-10/12 p-0">
       <router-outlet></router-outlet>
           <!-- footer -->
       <app-footer></app-footer>

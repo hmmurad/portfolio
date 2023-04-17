@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { PostService } from './shared/services/post.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -15,13 +17,21 @@ export class AppComponent implements OnInit{
   title = 'pgdit-project';
   showmenu = false;
 
+  constructor(private router: Router, private route: ActivatedRoute) {
+
+  }
+
 
   ngOnInit(): void {
+    console.log(this.route.snapshot.queryParams);
     
   }
 
   onshow() {
     this.showmenu = !this.showmenu
+  }
+  getPosts() {
+    this.router.navigate(['/posts'], {queryParams: {limit: 10}})
   }
   
 
