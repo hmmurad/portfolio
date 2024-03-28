@@ -1,0 +1,44 @@
+<header class="bg-slate-950 text-orange-500 border-b border-gray-700">
+  <nav
+    class="container relative mx-auto px-4 py-8 flex items-center gap-6 sm:flex-row justify-between ease-linear duration-200"
+  >
+    <div >
+      <a [routerLink]="['/']"  class="text-white uppercase text-3xl font-bold"
+        >port<span class="text-orange-500">folio</span></a
+      >
+    </div>
+    <div class="absolute sm:relative w-full bg-slate-950 top-0 right-0 py-12" *ngIf="open">
+      <ul
+        class="flex flex-col sm:flex-row items-center justify-end gap-3 ease-linear duration-200"
+      >
+        <li *ngFor="let item of menuItems">
+          <a
+            href="#{{item}}"
+            (click)="openMenu($event)"
+            class="text-md font-semibold uppercase hover:text-orange-600"
+            >{{ item }}</a
+          >
+        </li>
+      </ul>
+      <div class="absolute top-4 right-4 ease-linear duration-200">
+        <i (click)="openMenu($event)" class="bx bx-x text-4xl cursor-pointer"></i>
+      </div>
+    </div>
+    <div class="hidden  sm:flex justify-between items-center gap-x-5">
+        <ul
+            class="flex flex-row justify-end items-center gap-x-5 text-md font-semibold uppercase ease-linear duration-200">
+            <li                
+               *ngFor="let item of menuItems"><a class="hover:text-orange-600" href="#service">{{item}}</a></li>
+        </ul>
+        <div>
+            <i class="bx bx-moon text-2xl font-medium"></i>
+        </div>
+    </div>
+    <div class="flex justify-between items-center gap-x-4 sm:hidden">
+      <i class="bx bx-moon text-2xl font-medium"></i>
+      <div class="ease-linear duration-200 ">
+        <i (click)="openMenu($event)" class="bx bx-menu text-2xl font-medium cursor-pointer"></i>
+      </div>
+    </div>
+  </nav>
+</header>

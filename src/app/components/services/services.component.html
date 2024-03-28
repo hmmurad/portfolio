@@ -1,0 +1,27 @@
+<section class="relative bg-serviceAreaBg w-full bg-cover h-auto ">
+    <div class="bg-black bg-opacity-70 pb-16">
+        <div class="container mx-auto px-4 py-12 " >
+            <div class="text-center">
+                <h2 class="uppercase font-bold py-1 text-2xl text-orange-500 ">Services</h2>
+                <div class="w-16 mb-5 border-b-[3px] border-orange-500 mx-auto"></div>
+                <p class="text-sm text-gray-400 px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facere qui praesentium pariatur maiores reiciendis</p>
+            </div>
+            <div class="mt-20 flex flex-col justify-between items-center md:grid  md:grid-cols-3 gap-5">
+                <div class="border sm:border-0 shadow-gray-300 shadow-xl rounded-xl flex sm:flex-col justify-center items-center  sm:bg-transparent sm:text-center p-4" 
+                    *ngFor="let s of services">
+                    <div class=" basis-1/5 h-full overflow-hidden">
+                        <i class='{{s.icon}} text-6xl rounded-l-xl'></i>
+                    </div>
+                    <div class="basis-4/5 flex flex-col">
+                        <h4 class="uppercase font-semibold text-md text-orange-500">{{s.title}}</h4>
+                        <p class="md:px-2 py-2 text-sm">{{s.body}} </p>
+                        <button class="hover:font-semibold transition-all  duration-300 mt-3 place-self-end md:place-self-center text-orange-500 uppercase text-xs gap-2 flex justify-start items-center">Details <i class='bx bx-arrow-back text-sm rotate-180' ></i></button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+</section>

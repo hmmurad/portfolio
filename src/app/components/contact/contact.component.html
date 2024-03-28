@@ -1,0 +1,32 @@
+<section class="relative bg-portfolio w-full bg-cover h-auto ">
+<div class="bg-black bg-opacity-80">
+    <div class="container mx-auto px-4 py-12 " >
+        <!-- portfolio area header -->
+        <div class="text-center">
+            <h2 class="uppercase font-bold py-1 text-2xl text-orange-500 ">Contact</h2>
+            <div class="w-16 mb-5 border-b-[3px] border-orange-500 mx-auto"></div>
+            <p class="text-sm text-gray-400 px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facere qui praesentium pariatur maiores reiciendis</p>
+        </div>
+        <div class="mt-20 flex md:flex-row justify-center flex-col gap-5">
+            <div class="w-full">
+                <form class="flex flex-col justify-stretch items-center gap-4">
+
+                        <input type="text" class="inputText" placeholder="Full Name" >
+
+                        <input type="Email" class="inputText" placeholder="Email">
+
+                        <textarea type="textarea" class="inputText" placeholder="Message" rows="5"></textarea>
+                        <button class="w-full md:ml-auto btn-secondary uppercase">Submit</button>
+                </form>
+            </div>
+            <div class="w-full border-gray-100 border-2 shadow-md shadow-gray-100 rounded-lg">
+                    <google-map [options]="mapOptions" >
+                        <map-marker [position]="marker.position"></map-marker>
+                     </google-map>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>

@@ -1,0 +1,35 @@
+<section class="relative bg-slate-950 w-full h-auto ">
+    <div class="container mx-auto px-4 py-12 " >
+        <!-- portfolio area header -->
+        <div class="text-center">
+            <h2 class="uppercase font-bold py-1 text-2xl text-orange-500 ">Portfolio</h2>
+            <div class="w-16 mb-5 border-b-[3px] border-orange-500 mx-auto"></div>
+            <p class="text-sm text-gray-400 px-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facere qui praesentium pariatur maiores reiciendis</p>
+        </div>
+        <div class="mt-20 ">
+            <!-- portfolio item area -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
+                <!-- portfolio item -->
+                <div class="relative shadow-lg shadow-gray-300 rounded-lg group ease-in duration-300 mb-3 "
+                    *ngFor="let p of portfolioItem"    
+                >
+                    <div class="w-full h-full">
+                        <img src="../../../assets/images/{{p.image}}.png" class="object-cover h-[250px] w-full md:h-full rounded-lg" alt="">
+                    </div>
+                    <div class="absolute w-full h-full top-0 left-0 hidden group-hover:flex justify-center items-center transition-all ease-in-out duration-500">
+                        <div class="bg-black absolute h-full w-full opacity-80 rounded-lg"></div>
+                        <div class="relative z-10 w-full bg-gray-200 text-center py-3 ">
+                            <a href="{{p.link}}" target="_blank" rel="noopener noreferrer" class=" text-md uppercase text-orange-500 font-semibold hover:text-orange-600">{{p.title}}</a>
+                        </div>
+                    </div>
+<!--                     
+                    <div class="relative hidden md:block w-full text-center text-md uppercase py-2 bg-orange-500 rounded-b-lg">
+                        <h2>{{p.title}}</h2>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
